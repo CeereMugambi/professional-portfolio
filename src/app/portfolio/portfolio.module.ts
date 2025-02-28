@@ -23,6 +23,9 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { PortfolioRoutingModule } from './portfolio-routing.module';
+import { AboutModule } from '../about/about.module';
+import { ContactModule } from '../contact/contact.module';
 
 
 
@@ -56,6 +59,9 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    PortfolioRoutingModule,
+    AboutModule,
+    ContactModule
   ],
   exports: [
     PortfolioComponent,

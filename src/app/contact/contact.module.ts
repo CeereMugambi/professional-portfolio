@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactBodyComponent } from './contact-body/contact-body.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactHeadComponent } from './contact-head/contact-head.component';
+import { ContactRoutingModule } from './contact-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { ContactHeadComponent } from './contact-head/contact-head.component';
     ContactHeadComponent
     ],
   imports: [
-    CommonModule
+    CommonModule,
+    ContactRoutingModule
   ],
   exports: [
     ContactComponent,
