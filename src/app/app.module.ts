@@ -25,6 +25,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { PortfolioModule } from './portfolio/portfolio.module';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     MdbTooltipModule,
     MdbValidationModule,
     SharedModule,
-    PortfolioModule
+    PortfolioModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]
