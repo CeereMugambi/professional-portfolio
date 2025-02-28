@@ -22,10 +22,13 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { RouterModule } from '@angular/router';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
