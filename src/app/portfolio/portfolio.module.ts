@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HeadComponent } from './head/head.component';
+import { BodyComponent } from './body/body.component';
+import { Card1Component } from './body/card1/card1.component';
+import { Card2Component } from './body/card2/card2.component';
+import { Card3Component } from './body/card3/card3.component';
+import { Card4Component } from './body/card4/card4.component';
 
-import { AppComponent } from './app.component';
-
-// MDB Modules
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
@@ -20,21 +24,23 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { SharedModule } from './shared/shared.module';
-import { PortfolioModule } from './portfolio/portfolio.module';
+
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    PortfolioComponent,
+    HeadComponent,
+    BodyComponent,
+    Card1Component,
+    Card2Component,
+    Card3Component,
+    Card4Component
   ],
   imports: [
-    BrowserModule,
-    RouterModule,
-    BrowserAnimationsModule,
+    CommonModule,
     MdbAccordionModule,
     MdbCarouselModule,
     MdbCheckboxModule,
@@ -50,10 +56,15 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    SharedModule,
-    PortfolioModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [
+    PortfolioComponent,
+    HeadComponent,
+    BodyComponent,
+    Card1Component,
+    Card2Component,
+    Card3Component,
+    Card4Component
+  ] 
 })
-export class AppModule { }
+export class PortfolioModule { }
